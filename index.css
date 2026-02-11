@@ -86,8 +86,9 @@ h2::before {
 .welcome-text {
   background-color: white;
   margin: auto;
-  width: 80%;
+  width: 60%;
   padding: 10px;
+  line-height: 1.5;
 }
 
 .schedule {
@@ -182,7 +183,7 @@ h2::before {
 
 .address {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -293,3 +294,4 @@ footer button {
   align-items: flex-start;
   padding-left: 16px;
 }
+
