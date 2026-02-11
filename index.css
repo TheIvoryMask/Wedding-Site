@@ -6,9 +6,9 @@ body {
 }
 
 header {
-  background-color: #80b764;
+  background-color: #74875B;
   margin-top: 0;
-  color: black;
+  color: rgb(36, 35, 35);
   text-align: center;
   height: 50px;
   margin: 0;
@@ -50,13 +50,13 @@ h2::before {
   position: relative;
 }
 
+.splash h3 {
+  margin-top: 50px;
+}
+
 .splash-image {
   width: 100%;
   height: auto;
-}
-
-.splash h3 {
-  margin-top: 50px;
 }
 
 .date {
@@ -78,7 +78,7 @@ h2::before {
 .welcome {
   text-align: center;
   padding: 20px;
-  background-color: #80b764;
+  background-color: #74875B;
   height: 50vh;
   align-content: center;
 }
@@ -95,12 +95,6 @@ h2::before {
   padding: 20px;
 }
 
-.schedule-image {
-  margin-top: 0px;
-  width: 100%;
-  height: auto;
-}
-
 .schedule-box {
   display: flex;
   flex-direction: row;
@@ -109,7 +103,7 @@ h2::before {
 }
 
 .schedule-box img {
-  width: 200px;
+  width: 90%;
   height: auto;
   margin-left: 0;
 }
@@ -132,20 +126,26 @@ h2::before {
 }
 
 .table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   width: 20%;
   height: 40vh;
-  background-color: #80b764;
-  align-content: space-evenly;
+  background-color: #6a7c53;
   border-radius: 15px;
 }
 
 .table-btn {
     margin-top: 10px;
-    padding: 20px 20px;
-    background-color: #80b764;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: #74875B;
     border: none;
-    border-radius: 30px;
+    border-radius: 50%;
     font-size: 16px;
+    box-shadow: 5px 5px 10px rgba(49, 48, 48, 0.3);
 }
 
 .menu {
@@ -171,11 +171,13 @@ h2::before {
 .location button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #d1d87f;
+    background-color: #b4a543;
+    color: white;
     border: none;
     border-radius: 30px;
     font-size: 16px;
     margin-bottom: 50px;
+    box-shadow: 5px 5px 30px rgba(49, 48, 48, 0.5);
 }
 
 .address {
@@ -196,16 +198,98 @@ button {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #80b764;
+  background-color: #74875B;
   min-height: 20vh;
 }
 
 footer button {
     margin: 10px;
     padding: 10px 20px;
-    background-color: #80b764;
+    background-color: #74875B;
     border: none;
     border-radius: 30px;
     font-size: 16px;
+}
 
+/* MODAL STYLES */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 420px;
+  height: 260px;
+  background: rgba(255, 255, 255);
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.table-visual {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 230px;
+  transform: translate(-50%, -50%);
+  background: #74875B;
+  border-radius: 12px;
+}
+
+.seats {
+  position: absolute;
+  left: 0;
+  right: 0;
+  gap: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  pointer-events: auto;
+  box-sizing: border-box;
+}
+
+
+
+
+.seats .side {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.seat {
+  background: white;
+  padding: 3px 3px;
+  border-radius: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  max-width: 160px;
+  text-align: center;
+  
+}
+
+.seats .side:first-child {
+  align-items: flex-end;
+  padding-right: 16px;
+}
+
+.seats .side:last-child {
+  align-items: flex-start;
+  padding-left: 16px;
 }
