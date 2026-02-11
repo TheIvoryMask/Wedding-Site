@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -31,77 +32,35 @@
                 <p>We are so excited to share this special day with you. Here you will find all the information you need about our wedding ceremony, reception, and accommodations. Thank you for being a part of our lives and celebrating with us!</p>
             </div>
         </div>    
-        <!-- <div class="schedule">
+       <div class="schedule">
             <h2>Today's Schedule</h2>
             <p>Please arrive at the venue 30 minutes before it begins.</p>
             <div class="schedule-box">
-                <div class="schedule-times">
-                    <p>Arrival</p>
-                    <p>Ceremony</p>
-                    <p>Cocktail Party</p>
-                    <p>First Dance</p>
-                    <p>Dinner</p>
-                    <p>Cake</p>
-                    <p>Dancing</p>
-                    <p>Send-off</p>
-                </div>
-                <img class="schedule-image" src="schedule.jpg" alt="Wedding Schedule">
+
+                <img class="schedule-image" src="Wedding schedule(ENG).jpg" alt="Wedding Schedule">
                 
             </div>
-        </div> -->
-        <!-- <div class="seating-chart" id="seating">
+        </div> 
+      <div class="seating-chart" id="seating">
             <h2>Seating Chart</h2>
             <div class="table-container">
                 <div class="table-1 table">
-                    <button class="table-btn">A</button>
-                    <button class="table-btn">B</button>
-                    <button class="table-btn">C</button>
+                    <button class="table-btn" data-table="A">A</button>
+                    <button class="table-btn" data-table="B">B</button>
                 </div>
                 <div class="table-2 table">
-                    <button class="table-btn">D</button>
-                    <button class="table-btn">E</button>
-                    <button class="table-btn">F</button>
+                    <button class="table-btn" data-table="C">C</button>
+                    <button class="table-btn" data-table="D">D</button>
+                    <button class="table-btn" data-table="E">E</button>
                 </div>
                 <div class="table-3 table">
-                    <button class="table-btn">G</button>
-                    <button class="table-btn">H</button>
-                    <button class="table-btn">I</button>
+                    <button class="table-btn" data-table="F">F</button>
+                    <button class="table-btn" data-table="G">G</button>
+                    <button class="table-btn" data-table="H">H</button>
                 </div>
             </div>
-        </div> -->
-
-            <div class="seating-chart" id="seating">
-            <h2>Seating Chart</h2>
-
-            <div class="table-container">
-                <div class="table table-1">
-                <button class="table-btn" data-table="A">A</button>
-                <button class="table-btn" data-table="B">B</button>
-                <button class="table-btn" data-table="C">C</button>
-                </div>
-
-                <div class="table table-2">
-                <button class="table-btn" data-table="D">D</button>
-                <button class="table-btn" data-table="E">E</button>
-                <button class="table-btn" data-table="F">F</button>
-                </div>
-
-                <div class="table table-3">
-                <button class="table-btn" data-table="G">G</button>
-                <button class="table-btn" data-table="H">H</button>
-                <button class="table-btn" data-table="I">I</button>
-                </div>
-            </div>
-
-            <!-- DISPLAY AREA -->
-            <!-- <div class="table-display">
-                <div class="center-box" id="table-letter">A</div>
-
-                <div class="seat" data-seat="0"></div>
-                <div class="seat" data-seat="1"></div>
-                <div class="seat" data-seat="2"></div>
-                <div class="seat" data-seat="3"></div>
-            </div> -->
+        </div>
+        
             </div>
         <div class="menu" id="menu">
             <h2>Menu</h2>
@@ -127,6 +86,12 @@
         </div>   
 
     </div>
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <div class="table-visual"></div>
+                <div class="seats" id="seats"></div>
+            </div>
+        </div>
     <footer>
         <button onclick="window.location.href='#welcome'">Welcome</button>
         <button onclick="window.location.href='#seating'">Seating</button>
@@ -135,4 +100,6 @@
         
         <p>The Geercke Family Wedding</p>
     </footer>
+
+<script src="script.js"></script>
 </body>   
