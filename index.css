@@ -86,8 +86,8 @@ h2::before {
 .welcome-text {
   background-color: white;
   margin: auto;
-  width: 60%;
-  padding: 10px;
+  width: 70%;
+  padding: 40px;
   line-height: 1.5;
 }
 
@@ -294,4 +294,5 @@ footer button {
   align-items: flex-start;
   padding-left: 16px;
 }
+
 
